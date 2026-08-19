@@ -1,0 +1,77 @@
+package p919o8;
+
+import android.gov.nist.core.Separators;
+import java.util.List;
+import kotlin.jvm.internal.AbstractC16544l;
+import p001A.AbstractC0010F;
+import p775h2.AbstractC14376f;
+
+/* JADX INFO: renamed from: o8.j */
+/* JADX INFO: loaded from: classes.dex */
+public final class C17980j {
+
+    /* JADX INFO: renamed from: a */
+    public final int f57394a;
+
+    /* JADX INFO: renamed from: b */
+    public final List f57395b;
+
+    /* JADX INFO: renamed from: c */
+    public final int f57396c;
+
+    /* JADX INFO: renamed from: d */
+    public final C17971g f57397d;
+
+    public C17980j(int i10, List list, int i11, C17971g c17971g) {
+        AbstractC14376f.m15825D(i10, "status");
+        this.f57394a = i10;
+        this.f57395b = list;
+        this.f57396c = i11;
+        this.f57397d = c17971g;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof C17980j)) {
+            return false;
+        }
+        C17980j c17980j = (C17980j) obj;
+        return this.f57394a == c17980j.f57394a && AbstractC16544l.m18089b(this.f57395b, c17980j.f57395b) && this.f57396c == c17980j.f57396c && AbstractC16544l.m18089b(this.f57397d, c17980j.f57397d);
+    }
+
+    public final int hashCode() {
+        int iM24h = AbstractC0010F.m24h(this.f57394a) * 31;
+        List list = this.f57395b;
+        int iHashCode = (iM24h + (list == null ? 0 : list.hashCode())) * 31;
+        int i10 = this.f57396c;
+        int iM24h2 = (iHashCode + (i10 == 0 ? 0 : AbstractC0010F.m24h(i10))) * 31;
+        C17971g c17971g = this.f57397d;
+        return iM24h2 + (c17971g != null ? c17971g.hashCode() : 0);
+    }
+
+    public final String toString() {
+        String str;
+        StringBuilder sb2 = new StringBuilder("Connectivity(status=");
+        sb2.append(AbstractC17962d.m19637a0(this.f57394a));
+        sb2.append(", interfaces=");
+        sb2.append(this.f57395b);
+        sb2.append(", effectiveType=");
+        int i10 = this.f57396c;
+        if (i10 == 1) {
+            str = "SLOW_2G";
+        } else if (i10 == 2) {
+            str = "2G";
+        } else if (i10 != 3) {
+            str = i10 != 4 ? "null" : "4G";
+        } else {
+            str = "3G";
+        }
+        sb2.append(str);
+        sb2.append(", cellular=");
+        sb2.append(this.f57397d);
+        sb2.append(Separators.RPAREN);
+        return sb2.toString();
+    }
+}

@@ -1,0 +1,94 @@
+package p040Bd;
+
+import ao.AbstractC11153a0;
+import ao.C11181o0;
+import ao.InterfaceC11127C;
+import com.revenuecat.purchases.common.diagnostics.DiagnosticsEntry;
+import kotlin.jvm.internal.AbstractC16544l;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+import p559Wn.C8981m;
+import p594Y9.AbstractC9961r4;
+import p631Zn.InterfaceC10428a;
+import p631Zn.InterfaceC10429b;
+
+/* JADX INFO: renamed from: Bd.Z1 */
+/* JADX INFO: loaded from: classes3.dex */
+public final class C1038Z1 implements InterfaceC11127C {
+
+    /* JADX INFO: renamed from: a */
+    public static final C1038Z1 f2865a;
+    private static final /* synthetic */ PluginGeneratedSerialDescriptor descriptor;
+
+    static {
+        C1038Z1 c1038z1 = new C1038Z1();
+        f2865a = c1038z1;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.openai.feature.conversations.api.message.ApiConversationMessageAuthor", c1038z1, 2);
+        pluginGeneratedSerialDescriptor.m18453j("role", false);
+        pluginGeneratedSerialDescriptor.m18453j(DiagnosticsEntry.NAME_KEY, true);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    @Override // ao.InterfaceC11127C
+    public final KSerializer[] childSerializers() {
+        return new KSerializer[]{C1052b2.f2877c[0], AbstractC9961r4.m10615b(C11181o0.f33827a)};
+    }
+
+    @Override // kotlinx.serialization.KSerializer
+    public final Object deserialize(Decoder decoder) {
+        AbstractC16544l.m18094g(decoder, "decoder");
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = descriptor;
+        InterfaceC10428a interfaceC10428aMo5471c = decoder.mo5471c(pluginGeneratedSerialDescriptor);
+        KSerializer[] kSerializerArr = C1052b2.f2877c;
+        EnumC1066d2 enumC1066d2 = null;
+        boolean z6 = true;
+        String str = null;
+        int i10 = 0;
+        while (z6) {
+            int iMo10914s = interfaceC10428aMo5471c.mo10914s(pluginGeneratedSerialDescriptor);
+            if (iMo10914s == -1) {
+                z6 = false;
+            } else if (iMo10914s == 0) {
+                enumC1066d2 = (EnumC1066d2) interfaceC10428aMo5471c.mo5490y(pluginGeneratedSerialDescriptor, 0, kSerializerArr[0], enumC1066d2);
+                i10 |= 1;
+            } else {
+                if (iMo10914s != 1) {
+                    throw new C8981m(iMo10914s);
+                }
+                str = (String) interfaceC10428aMo5471c.mo5486u(pluginGeneratedSerialDescriptor, 1, C11181o0.f33827a, str);
+                i10 |= 2;
+            }
+        }
+        interfaceC10428aMo5471c.mo5470b(pluginGeneratedSerialDescriptor);
+        return new C1052b2(i10, enumC1066d2, str);
+    }
+
+    @Override // kotlinx.serialization.KSerializer
+    public final SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    @Override // kotlinx.serialization.KSerializer
+    public final void serialize(Encoder encoder, Object obj) {
+        C1052b2 value = (C1052b2) obj;
+        AbstractC16544l.m18094g(encoder, "encoder");
+        AbstractC16544l.m18094g(value, "value");
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = descriptor;
+        InterfaceC10429b interfaceC10429bMo5570c = encoder.mo5570c(pluginGeneratedSerialDescriptor);
+        interfaceC10429bMo5570c.mo5575i(pluginGeneratedSerialDescriptor, 0, C1052b2.f2877c[0], value.f2878a);
+        boolean zMo5565F = interfaceC10429bMo5570c.mo5565F(pluginGeneratedSerialDescriptor);
+        String str = value.f2879b;
+        if (zMo5565F || str != null) {
+            interfaceC10429bMo5570c.mo5585s(pluginGeneratedSerialDescriptor, 1, C11181o0.f33827a, str);
+        }
+        interfaceC10429bMo5570c.mo5569b(pluginGeneratedSerialDescriptor);
+    }
+
+    @Override // ao.InterfaceC11127C
+    public final KSerializer[] typeParametersSerializers() {
+        return AbstractC11153a0.f33790b;
+    }
+}

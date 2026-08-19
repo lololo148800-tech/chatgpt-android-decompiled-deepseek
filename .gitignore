@@ -1,0 +1,17 @@
+# Local tool downloads and temporary outputs
+.tools/
+.tmp/
+*.log
+!metadata/jadx.log
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Build outputs if the project is later reconstructed
+.gradle/
+build/
+app/build/

@@ -1,0 +1,8 @@
+package livekit.org.webrtc;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface RefCounted {
+    void release();
+
+    void retain();
+}

@@ -1,0 +1,53 @@
+package com.auth0.android.provider.lcl;
+
+/* JADX INFO: loaded from: classes.dex */
+public class qffLJgOYizGmMj {
+    public static String ARFYL;
+    public static String AwHkeNKCCBNqWhE;
+    public static String DMMg;
+    public static String DQcCUlxiZa;
+    public static String ERSOTvPNiWiZAz;
+    public static String FpH;
+    public static String JOhZanMLDio;
+    public static String JbQxCtb;
+    public static String LqnZVmuYKD;
+    public static String MsYCfdoqfqXzkly;
+    public static String PPvaCexDBnj;
+    public static String QMhDsfueMvXhIoK;
+    public static String QQLYyFT;
+    public static String RBRaawORRT;
+    public static String RgQ;
+    public static String RuebMYvGh;
+    public static String TqnLpBqXdMd;
+    public static String UUdoMbiFVmo;
+    public static String VFxw;
+    public static String WfErDH;
+    public static String WupVNUrIevAT;
+    public static String XDpCYemNAgpjWuL;
+    public static String XOA;
+    public static String XoBjYLMC;
+    public static String YGYFXNPZrig;
+    public static String ZftadBtXAHqKfa;
+    public static String ZpuHdHQUZWp;
+    public static String aDVZB;
+    public static String avRaBKGnKtGYYeB;
+    public static String boOGlxXTRrAWr;
+    public static String dYsIPMyAASgWxT;
+    public static String dqYhTcs;
+    public static String dvCAiXBnlBLVSx;
+    public static String egvGUn;
+    public static String gGQMGNmA;
+    public static String hIr;
+    public static String klnPxGiDLuFFOOX;
+    public static String mLowjvjLam;
+    public static String nIZD;
+    public static String nbEwrpZMvxQS;
+    public static String nopvPn;
+    public static String onFGBDOHH;
+    public static String qZIbAsE;
+    public static String stJG;
+    public static String tcXlxdE;
+    public static String vSrVaiLG;
+    public static String xmS;
+    public static String xrYfjib;
+}

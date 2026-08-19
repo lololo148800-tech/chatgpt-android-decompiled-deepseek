@@ -1,0 +1,8 @@
+package p049Bm;
+
+import mm.InterfaceC17302e;
+
+/* JADX INFO: renamed from: Bm.s */
+/* JADX INFO: loaded from: classes3.dex */
+public interface InterfaceC1444s extends InterfaceC17302e {
+}

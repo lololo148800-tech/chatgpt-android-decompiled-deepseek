@@ -1,0 +1,30 @@
+package p817j$.util.stream;
+
+/* JADX INFO: renamed from: j$.util.stream.L0 */
+/* JADX INFO: loaded from: classes4.dex */
+abstract /* synthetic */ class AbstractC15803L0 {
+
+    /* JADX INFO: renamed from: a */
+    static final /* synthetic */ int[] f49111a;
+
+    static {
+        int[] iArr = new int[EnumC15910f3.values().length];
+        f49111a = iArr;
+        try {
+            iArr[EnumC15910f3.REFERENCE.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            f49111a[EnumC15910f3.INT_VALUE.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            f49111a[EnumC15910f3.LONG_VALUE.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            f49111a[EnumC15910f3.DOUBLE_VALUE.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+    }
+}

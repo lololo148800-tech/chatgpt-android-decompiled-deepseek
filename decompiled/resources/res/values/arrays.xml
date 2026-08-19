@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="vision_short_cut_trigger_words">
+        <item>camera</item>
+        <item>record</item>
+        <item>vision</item>
+    </array>
+    <array name="voice_short_cut_trigger_words">
+        <item>voice</item>
+        <item>speech</item>
+    </array>
+</resources>

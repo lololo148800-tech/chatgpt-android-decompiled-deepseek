@@ -1,0 +1,17 @@
+package com.revenuecat.purchases.models;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.AbstractC16544l;
+import livekit.LivekitInternal$NodeStats;
+
+/* JADX INFO: loaded from: classes3.dex */
+@Metadata(m18066d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0017\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u00028F¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004¨\u0006\u0005"}, m18067d2 = {"googleProduct", "Lcom/revenuecat/purchases/models/GoogleStoreProduct;", "Lcom/revenuecat/purchases/models/StoreProduct;", "getGoogleProduct", "(Lcom/revenuecat/purchases/models/StoreProduct;)Lcom/revenuecat/purchases/models/GoogleStoreProduct;", "purchases_customEntitlementComputationRelease"}, m18068k = 2, m18069mv = {1, 8, 0}, m18071xi = LivekitInternal$NodeStats.FORWARD_LATENCY_FIELD_NUMBER)
+public final class GoogleStoreProductKt {
+    public static final GoogleStoreProduct getGoogleProduct(StoreProduct storeProduct) {
+        AbstractC16544l.m18094g(storeProduct, "<this>");
+        if (storeProduct instanceof GoogleStoreProduct) {
+            return (GoogleStoreProduct) storeProduct;
+        }
+        return null;
+    }
+}

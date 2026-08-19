@@ -1,0 +1,26 @@
+package kotlin.reflect.jvm.internal.impl.types;
+
+import kotlin.jvm.internal.AbstractC16544l;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class TypeCapabilitiesKt {
+    public static final CustomTypeParameter getCustomTypeParameter(KotlinType kotlinType) {
+        AbstractC16544l.m18094g(kotlinType, "<this>");
+        Object objUnwrap = kotlinType.unwrap();
+        CustomTypeParameter customTypeParameter = objUnwrap instanceof CustomTypeParameter ? (CustomTypeParameter) objUnwrap : null;
+        if (customTypeParameter == null || !customTypeParameter.isTypeParameter()) {
+            return null;
+        }
+        return customTypeParameter;
+    }
+
+    public static final boolean isCustomTypeParameter(KotlinType kotlinType) {
+        AbstractC16544l.m18094g(kotlinType, "<this>");
+        Object objUnwrap = kotlinType.unwrap();
+        CustomTypeParameter customTypeParameter = objUnwrap instanceof CustomTypeParameter ? (CustomTypeParameter) objUnwrap : null;
+        if (customTypeParameter != null) {
+            return customTypeParameter.isTypeParameter();
+        }
+        return false;
+    }
+}

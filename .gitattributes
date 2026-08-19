@@ -1,0 +1,10 @@
+# Keep the decompiled source searchable as Java/XML on GitHub.
+*.java linguist-language=Java
+*.xml linguist-language=XML
+*.json linguist-language=JSON
+*.apk binary linguist-generated=true
+*.png binary linguist-generated=true
+*.kw binary linguist-generated=true
+
+# Decompiled output is generated from a binary artifact.
+decompiled/** linguist-generated=false
